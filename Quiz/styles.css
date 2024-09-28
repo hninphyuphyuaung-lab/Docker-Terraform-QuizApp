@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.quiz-container {
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    margin: 50px auto;
+    animation: fadeIn 0.5s ease;
+}
+
+h1 {
+    color: white;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #ff6f61; /* Default button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ff4f40; /* Hover color */
+    transform: scale(1.05);
+}
+
+/* Specific styles for the Next Question button */
+#nextButton {
+    background-color: #4caf50; /* Different color */
+    margin: 20px auto; /* Centering the button */
+    display: block; /* Make sure it behaves as a block element */
+}
+
+/* Hover state for Next Question button */
+#nextButton:hover {
+    background-color: #45a049; /* Darker green for hover */
+}
+
+.hidden {
+    display: none;
+}
+
+#quiz {
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes dance {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.dancing {
+    animation: dance 0.5s infinite; /* Looping dance animation */
+}
+
+.score-container {
+    animation: fadeIn 0.5s ease;
+}
